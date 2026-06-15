@@ -1,5 +1,24 @@
 [
   {
+    "id": 11,
+    "category": "Standalone",
+    "title": "StakeholderIQ",
+    "description": "Sistema de IA multi-agente empresarial donde seis agentes especializados analizan decisiones de negocio desde distintas perspectivas organizacionales. Utiliza recuperación específica por rol, detección de conflictos, recomendaciones explicables y simulación de escenarios para mejorar el alineamiento de decisiones.",
+    "tools": [
+      "Sistemas multi-agente",
+      "Inteligencia de decisiones organizacionales",
+      "Azure AI Foundry"
+    ],
+    "year": "Junio 2026",
+    "repo": "https://github.com/DataTalesByAgos/StakeholderIQ_public",
+    "image": "/projects/StakeHolderIQ_Presentation.png",
+    "images": [
+      "/projects/StakeHolderIQ_Presentation.png",
+      "/projects/stakeHolderIQ_ms.png"
+    ],
+    "metric": "Razonamiento multi-agente e inteligencia de decisiones explicable"
+  },
+  {
     "id": 10,
     "category": "Creative Coding",
     "title": "ANIMALIA Agents (w.i.p.)",
@@ -53,10 +72,12 @@
     ],
     "year": "Junio 2026",
     "repo": "https://github.com/DataTalesByAgos/Urban-Mobility-Analytics-MVP-",
-    "image": "/projects/urbanMobility2.png",
+    "image": "/projects/Urban_Mobility_1.png",
     "images": [
-      "/projects/urbanMobility2.png",
-      "/projects/urban_mogility1.png"
+      "/projects/Urban_Mobility_1.png",
+      "/projects/Urban_Mobility_2.png",
+      "/projects/Urban_Mobility_3.png",
+      "/projects/Urban_Mobility_4.png"
     ],
     "metric": "Movilidad urbana open data"
   },

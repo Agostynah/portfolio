@@ -67,47 +67,6 @@
   },
   "skillsGroups": [
     {
-      "id": "software-dev",
-      "title": "Desarrollo de Software",
-      "skills": [
-        "Python",
-        "TypeScript",
-        "JavaScript",
-        "FastAPI",
-        "React",
-        "Angular",
-        "APIs REST",
-        "Git",
-        "GitHub"
-      ]
-    },
-    {
-      "id": "data-eng",
-      "title": "Ingeniería de Datos",
-      "skills": [
-        "ETL / ELT",
-        "Apache Airflow",
-        "Kafka",
-        "Pentaho",
-        "N8N",
-        "Modelado y validación de datos",
-        "Automatización de pipelines"
-      ]
-    },
-    {
-      "id": "databases",
-      "title": "Bases de Datos",
-      "skills": [
-        "PostgreSQL",
-        "MySQL",
-        "MongoDB",
-        "Redis",
-        "ChromaDB",
-        "FAISS",
-        "SQL y NoSQL"
-      ]
-    },
-    {
       "id": "ml-ai",
       "title": "Machine Learning & AI",
       "skills": [
@@ -132,6 +91,47 @@
         "Visualización de datos",
         "KPIs y métricas",
         "Excel y Google Sheets"
+      ]
+    },
+    {
+      "id": "data-eng",
+      "title": "Ingeniería de Datos",
+      "skills": [
+        "ETL / ELT",
+        "Apache Airflow",
+        "Kafka",
+        "Pentaho",
+        "N8N",
+        "Modelado y validación de datos",
+        "Automatización de pipelines"
+      ]
+    },
+    {
+      "id": "software-dev",
+      "title": "Desarrollo de Software",
+      "skills": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "FastAPI",
+        "React",
+        "Angular",
+        "APIs REST",
+        "Git",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "databases",
+      "title": "Bases de Datos",
+      "skills": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "ChromaDB",
+        "FAISS",
+        "SQL y NoSQL"
       ]
     },
     {
