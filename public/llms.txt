@@ -1,0 +1,40 @@
+# Agostina Silva — AI Engineer & Builder
+
+> AI Engineer & Builder specialized in agentic systems, NLP, and RAG architectures. Design and deploy intelligent systems that solve real-world problems — from document intelligence platforms to procurement planning copilots.
+
+## Profile Summary
+- **Name**: Agostina Silva
+- **Role**: AI Engineer & Builder
+- **Current Company**: 16x9.ai (AI-driven automation & intelligent workflows)
+- **Previous Experience**: Corpora (Video Analytics & Retail KPIs), Favaloro University (Healthcare Simulation & Applied Research)
+- **ORCID**: https://orcid.org/0009-0008-4230-5191
+- **GitHub**: https://github.com/Agostynah
+- **LinkedIn**: https://linkedin.com/in/agosty
+
+## Key Specialty & Stack
+- **AI & Agentic Systems**: Agentic AI, Agent Orchestration, RAG Architectures, LangChain, LangGraph, Vector Search, MCP (Model Context Protocol).
+- **Core Engineering**: Python, PyTorch, HuggingFace, Rust, FastAPI, Scikit-Learn.
+- **Data & MLOps**: pgvector, ChromaDB, FAISS, Turbovec, MLflow, DVC, AutoML.
+
+## Published Research
+1. **Communication-Efficient Distributed Vector Memory Routing** (2026)
+   - DOI / Zenodo: 10.5281/zenodo.21445006
+   - GitHub: https://github.com/Agostynah/distributed-vector-memory-routing
+   - Topic: Multi-agent memory routing, low-bandwidth vector synchronization, gradient quantization.
+2. **Adaptive Memory Allocation Strategies for 3D Gaussian Splatting** (2026)
+   - DOI / Zenodo: 10.5281/zenodo.21445892
+   - GitHub: https://github.com/Agostynah/memory-update-3dgs
+   - Topic: Dynamic memory allocation for 3DGS under VRAM constraints.
+
+## Featured Systems & Projects
+- **CompraIQ**: Smart Argentine supermarket shopping copilot with inflation tracking, product matching, and basket optimization (https://github.com/Agostynah/CompraIQ).
+- **StakeholderIQ**: Enterprise multi-agent AI system for strategic decision-making.
+- **ANIMALIA Agents**: Evolutionary multi-agent ecosystem simulator.
+- **Healthcare Document Intelligence**: AI platform for clinical document analysis.
+- **Urban Mobility Analytics**: SUBE and GTFS geospatial analytics prototype.
+
+## Recent Articles
+- *The Illusion of the Second Brain* (July 2026) — Reflections on productivity overfitting and exploration vs. execution.
+- *The Next Internet Scarcity Might Be Trust* (June 2026) — Reflections on human provenance and Dead Internet theory.
+- *Are We Using AI Agents the Right Way?* (June 2026) — From prompts to persistent specifications.
+- *Rust, NPUs, and Edge Inference* (June 2026) — Hybrid intelligence architectures.

@@ -8,16 +8,16 @@ export default function RootRedirect() {
   const hash = window.location.hash.replace('#', '')
 
   if (hash) {
-    const esPost = findBlogPostBySlug('es', hash)
-    if (esPost) return <Navigate to={blogPostPath('es', esPost.slug)} replace />
-
     const enPost = findBlogPostBySlug('en', hash)
     if (enPost) return <Navigate to={blogPostPath('en', enPost.slug)} replace />
 
+    const esPost = findBlogPostBySlug('es', hash)
+    if (esPost) return <Navigate to={blogPostPath('es', esPost.slug)} replace />
+
     if (SECTION_HASHES.includes(hash)) {
-      return <Navigate to={`${homePath('es')}#${hash}`} replace />
+      return <Navigate to={`${homePath('en')}#${hash}`} replace />
     }
   }
 
-  return <Navigate to={homePath('es')} replace />
+  return <Navigate to={homePath('en')} replace />
 }

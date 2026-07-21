@@ -1,6 +1,6 @@
 export const LOCALES = ['es', 'en']
-export const DEFAULT_LOCALE = 'es'
-export const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://datatalesbyagos.github.io').replace(/\/$/, '')
+export const DEFAULT_LOCALE = 'en'
+export const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://Agostynah.github.io').replace(/\/$/, '')
 
 export function isValidLocale(lang) {
   return lang === 'es' || lang === 'en'

@@ -1,5 +1,27 @@
 [
   {
+    "id": 7,
+    "slug": "illusion-of-the-second-brain",
+    "title": "The Illusion of the Second Brain",
+    "date": "July 2026",
+    "readTime": "3 min",
+    "excerpt": "Reflections on Notion templates, Second Brain systems, Bullet Journals, and how premature optimization and productivity system overfitting restrict our capacity to explore and discover.",
+    "image": "/blog/en_exploracionvsejecucion.png",
+    "content": [
+      "__IMAGE_PATH:/blog/en_exploracionvsejecucion.png|Exploration vs. Execution: the tension between discovering connections and imposing structure.",
+      "For years, I tried practically every imaginable personal organization variant: Notion templates, Second Brain systems, Bullet Journals, knowledge managers, and, more recently, AI-powered tools.",
+      "Each one promised me a more orderly, efficient, and productive version of myself.",
+      "And for a while, I felt they worked. My information was better classified. My projects were better defined. My tasks had more context and traceability.",
+      "However, I began to notice a paradox: the more sophisticated the system became, the harder it was for me to follow my curiosity.",
+      "As a generalist, I rarely learn linearly. My process usually consists of moving between disciplines, chasing open questions, and exploring connections that do not yet have an obvious utility. Many of the most important ideas I found arose precisely from those seemingly unproductive journeys.",
+      "But productivity systems tend to demand premature clarity. They want to quickly convert an intuition into a project, a question into a task, and an exploration into a measurable goal.",
+      "I get it: for execution, that structure is valuable.",
+      "For discovery, not always.",
+      "__IMAGE_PATH:/blog/en_overfittingLearning.png|Overfitting in learning: premature optimization limits the exploration of the unknown.",
+      "Over time, I started to feel that I was optimizing too soon. Instead of expanding my possibilities, the system began to shape what I considered relevant. I ended up overfitting my current interests, building an excellent structure for exploiting what I already knew, but less effective for exploring what I still did not know."
+    ]
+  },
+  {
     "id": 6,
     "slug": "next-internet-scarcity-trust",
     "title": "The Next Internet Scarcity Might Be Trust",

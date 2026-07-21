@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import portfolioData, { findBlogPostBySlug, getLocalizedPost } from '../data'
 import { absoluteUrl, blogPostPath, homePath, DEFAULT_LOCALE } from '../lib/routes'
 
-const SITE_NAME = 'Agostina Silva — Data Scientist'
+const SITE_NAME = 'Agostina Silva — AI Engineer & Builder'
 
 function upsertMeta(attr, key, content) {
   if (!content) return
@@ -111,7 +111,34 @@ export default function SEOHead({ language, slug }) {
       upsertLink('alternate', absoluteUrl(homePath('es')), { hreflang: 'es' })
       upsertLink('alternate', absoluteUrl(homePath('en')), { hreflang: 'en' })
       upsertLink('alternate', absoluteUrl(homePath(DEFAULT_LOCALE)), { hreflang: 'x-default' })
-      removeJsonLd('portfolio-jsonld')
+      upsertJsonLd('portfolio-jsonld', {
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: data.personalInfo.name,
+        jobTitle: data.personalInfo.role,
+        description: data.personalInfo.bio,
+        url: canonical,
+        sameAs: [
+          data.personalInfo.github,
+          data.personalInfo.linkedin,
+          data.personalInfo.twitter,
+          data.personalInfo.orcid
+        ].filter(Boolean),
+        worksFor: {
+          '@type': 'Organization',
+          name: '16x9.ai'
+        },
+        knowsAbout: [
+          'Agentic AI',
+          'Agent Orchestration',
+          'RAG Architectures',
+          'Distributed Vector Memory',
+          'NLP',
+          'Python',
+          'PyTorch',
+          'Rust'
+        ]
+      })
     }
   }, [language, slug])
 

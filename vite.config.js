@@ -45,7 +45,7 @@ ${urls.map(url => `  <url>
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '')
-  const siteUrl = (env.VITE_SITE_URL || 'https://datatalesbyagos.github.io').replace(/\/$/, '')
+  const siteUrl = (env.VITE_SITE_URL || 'https://Agostynah.github.io').replace(/\/$/, '')
 
   return {
     plugins: [react(), seoBuildPlugin(siteUrl)],

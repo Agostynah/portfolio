@@ -1,5 +1,46 @@
 [
   {
+    "id": 13,
+    "category": "Research",
+    "title": "Constrained Memory Update in 3D Reconstruction",
+    "description": "Research on optimizing memory budgets in 3D reconstruction (Gaussian Splatting) formulated as a resource allocation problem. Implements a Q-learning network and CEM planners to optimize update decisions over heuristics.",
+    "tools": [
+      "Python",
+      "PyTorch",
+      "3D Gaussian Splatting",
+      "CEM Planning",
+      "Reinforcement Learning"
+    ],
+    "year": "July 2026",
+    "repo": "https://github.com/Agostynah/memory-update-3dgs",
+    "image": "/projects/memory_update_3dgs_aggregated.png",
+    "images": [
+      "/projects/memory_update_3dgs_aggregated.png"
+    ],
+    "metric": "+17.1% Q-Learning and +22.2% CEM improvement over heuristics"
+  },
+  {
+    "id": 12,
+    "category": "Research",
+    "title": "Communication-Efficient Distributed Vector Memory",
+    "description": "Investigation of adaptive routing strategies for distributed vector databases that reduce communication costs while maintaining retrieval quality. Proposes confidence threshold and progressive expansion algorithms over partitioned semantic memories.",
+    "tools": [
+      "Python",
+      "turbovec",
+      "Sentence Transformers",
+      "Vector Search",
+      "Distributed Databases"
+    ],
+    "year": "June 2026",
+    "repo": "https://github.com/Agostynah/distributed-vector-memory-routing",
+    "deploy": "https://doi.org/10.5281/zenodo.21445006",
+    "image": "/projects/pareto_frontier_quality_vs_communication.png",
+    "images": [
+      "/projects/pareto_frontier_quality_vs_communication.png"
+    ],
+    "metric": "42% communication reduction with 100% Recall@10 retention"
+  },
+  {
     "id": 11,
     "category": "Standalone",
     "title": "StakeholderIQ",
@@ -10,7 +51,7 @@
       "Azure AI Foundry"
     ],
     "year": "June 2026",
-    "repo": "https://github.com/DataTalesByAgos/StakeholderIQ_public",
+    "repo": "https://github.com/Agostynah/StakeholderIQ_public",
     "image": "/projects/StakeHolderIQ_Presentation.png",
     "images": [
       "/projects/StakeHolderIQ_Presentation.png",
@@ -30,7 +71,7 @@
       "LLMs"
     ],
     "year": "June 2026",
-    "repo": "https://github.com/DataTalesByAgos/ANIMALIA-Agents",
+    "repo": "https://github.com/Agostynah/ANIMALIA-Agents",
     "image": "/projects/Animalia Agents.png",
     "images": [
       "/projects/Animalia Agents.png",
@@ -51,7 +92,7 @@
       "LLMs"
     ],
     "year": "June 2026",
-    "repo": "https://github.com/DataTalesByAgos/Healthcare-Document-Intelligence-Platform",
+    "repo": "https://github.com/Agostynah/Healthcare-Document-Intelligence-Platform",
     "image": "/projects/rag_salud1.png",
     "images": [
       "/projects/rag_salud1.png"
@@ -60,7 +101,7 @@
   },
   {
     "id": 4,
-    "category": "Standalone",
+    "category": "Systems",
     "title": "Urban Mobility Analytics MVP",
     "description": "Urban mobility analytics prototype with open SUBE and GTFS data. Geospatial visualizations and indicators for transport planning.",
     "tools": [
@@ -71,7 +112,7 @@
       "Folium"
     ],
     "year": "June 2026",
-    "repo": "https://github.com/DataTalesByAgos/Urban-Mobility-Analytics-MVP-",
+    "repo": "https://github.com/Agostynah/Urban-Mobility-Analytics-MVP-",
     "image": "/projects/Urban_Mobility_1.png",
     "images": [
       "/projects/Urban_Mobility_1.png",
@@ -93,7 +134,7 @@
       "Docker"
     ],
     "year": "May 2026",
-    "repo": "https://github.com/DataTalesByAgos/QuantLab",
+    "repo": "https://github.com/Agostynah/QuantLab",
     "deploy": "https://quantlab-liard-delta.vercel.app/",
     "image": "/projects/quantlab_architecture.png",
     "images": [
@@ -113,7 +154,7 @@
       "Hardhat"
     ],
     "year": "May 2026",
-    "repo": "https://github.com/DataTalesByAgos/mini-dex",
+    "repo": "https://github.com/Agostynah/mini-dex",
     "image": "/projects/miniDex.png",
     "images": [
       "/projects/miniDex.png"
@@ -123,25 +164,26 @@
   {
     "id": 1,
     "category": "Standalone",
-    "title": "Price Hunter",
-    "description": "Scraping and price analysis tool for supermarkets. Detects variations, anomalies, and generates indicators for price transparency.",
+    "title": "CompraIQ",
+    "description": "Smart shopping planning platform for Argentine supermarkets that optimizes total spend by combining product prices, bank promotions, virtual wallets, and loyalty programs. Powered by an automated ETL pipeline and optimization algorithms, it simulates purchasing scenarios and strategically distributes the shopping cart to maximize actual savings while respecting reimbursement caps.",
     "tools": [
       "Python",
-      "ML",
+      "ETL Pipelines",
       "Web Scraping",
-      "SQL"
+      "SQL",
+      "Optimization Algorithms"
     ],
     "year": "April 2026",
-    "repo": "https://github.com/DataTalesByAgos/Cazador-De-Precios",
+    "repo": "https://github.com/Agostynah/CompraIQ",
     "image": "/projects/cazador_precios.png",
     "images": [
       "/projects/cazador_precios.png"
     ],
-    "metric": "Automated price monitoring"
+    "metric": "Smart shopping planning and budget optimization"
   },
   {
     "id": 7,
-    "category": "Research",
+    "category": "Data Science",
     "title": "Financial Fraud Detection",
     "description": "High-precision predictive model for identifying fraudulent transactions in payment channels using severely imbalanced data.",
     "tools": [
@@ -159,7 +201,7 @@
   },
   {
     "id": 8,
-    "category": "Research",
+    "category": "Data Science",
     "title": "Global Earthquake-Tsunami Risk Assessment",
     "description": "Comprehensive analysis and predictive modeling of tsunami risk generated by global seismic activity, with interactive maps.",
     "tools": [

@@ -6,35 +6,36 @@
     "contact": "Contacto"
   },
   "hero": {
-    "titlePart1": "AI & Product",
+    "titlePart1": "AI Engineer",
     "titlePart2": "",
-    "titlePart3": "Engineer",
+    "titlePart3": "& Builder",
     "intro": "Soy",
     "viewProjects": "Ver Proyectos",
     "contact": "Contactar"
   },
   "personalInfo": {
     "name": "Agostina Silva",
-    "role": "AI & Product Engineer",
+    "role": "AI Engineer & Builder",
     "location": "Argentina",
-    "bio": "Diseño sistemas de IA end-to-end que conectan modelos de machine learning con productos reales y entornos de producción.",
+    "bio": "AI Engineer & Builder especializada en sistemas agentic, NLP y arquitecturas RAG. Diseño y despliego sistemas inteligentes que resuelven problemas reales — desde plataformas de inteligencia documental hasta copilotos de planificación de compras.",
     "email": "agostina.dev.dc@gmail.com",
-    "github": "https://github.com/DataTalesByAgos",
-    "linkedin": "https://linkedin.com/in/agostinadevdc",
-    "twitter": "https://x.com/DataTalesByAgos"
+    "github": "https://github.com/Agostynah",
+    "linkedin": "https://linkedin.com/in/agosty",
+    "twitter": "https://x.com/Agostynah",
+    "orcid": "https://orcid.org/0009-0008-4230-5191"
   },
   "valueCards": [
     {
-      "title": "Modelos Escalables",
-      "desc": "Arquitecturas ML diseñadas desde el primer día para producción de gran escala."
+      "title": "Sistemas Inteligentes",
+      "desc": "Diseño y despliegue de copilots y plataformas que resuelven necesidades de negocio reales."
     },
     {
-      "title": "Impacto Fintech",
-      "desc": "Aumento comprobado del revenue e inclusión financiera con algoritmos alt-data."
+      "title": "Automatización IA",
+      "desc": "Construcción de flujos de trabajo autónomos y agentes inteligentes que optimizan procesos."
     },
     {
-      "title": "AgroTech 4.0",
-      "desc": "Pionera en Computer Vision para optimización de rindes agrícolas en Latam."
+      "title": "Investigación Aplicada",
+      "desc": "Enfoque en memory routing, ruteo de memoria distribuido y estrategias de búsqueda semántica."
     }
   ],
   "projectsSection": {
@@ -52,73 +53,90 @@
   },
   "experience": [
     {
-      "role": "Prácticas Data Scientist",
+      "role": "AI Engineer & Builder",
+      "company": "16x9.ai",
+      "period": "Jul 2026 — Presente",
+      "description": "Construcción de automatización impulsada por IA y flujos de trabajo inteligentes enfocados en maximizar la eficiencia y resolver problemas de negocio."
+    },
+    {
+      "role": "Data Scientist / Analytics Engineer",
       "company": "Corpora",
       "period": "Sep 2025 — Nov 2025",
-      "description": "Diseño e implementación de procesos automáticos end-to-end para captura, procesamiento y validación de datos orientados a KPIs operativos. Análisis y optimización de flujos operativos, generación de indicadores y documentación de procesos y lógica de negocio."
+      "description": "Desarrollo de pipelines de datos a KPIs para analytics de retail. Diseño e implementación de procesos automáticos para la captura, procesamiento y validación de datos."
+    },
+    {
+      "role": "Ayudante de Investigación y Simulación",
+      "company": "Universidad Favaloro",
+      "period": "Ene 2023 — Mar 2024",
+      "description": "Desarrollo inicial del área de simulación aplicada al sector salud. Docencia universitaria, orientación a estudiantes en metodologías de investigación y estructuración de flujos de análisis de datos."
     }
   ],
   "skillsSection": {
     "tag": "Tecnologías",
-    "title": "Stack Tecnológico",
-    "focusTag": "Focus 2026",
-    "focusTitle": "Investigación Activa",
-    "focusDesc": "Investigación activa en quant, machine learning y sistemas basados en datos."
+    "title": "Stack Tecnológico"
   },
   "skillsGroups": [
     {
-      "id": "ml-ai",
-      "title": "Machine Learning & AI",
+      "id": "ai-agentic",
+      "title": "AI & Agentic Systems",
       "skills": [
-        "Scikit-Learn",
-        "TensorFlow",
-        "PyTorch",
-        "NLP y LLMs",
-        "LangChain",
-        "Hugging Face",
-        "Ollama",
-        "RAG y Embeddings",
-        "Evaluación de modelos y sistemas IA"
+        "Agentic AI",
+        "Orquestación de Agentes",
+        "Sistemas Multi-Agente",
+        "Agentes Autónomos",
+        "Arquitecturas RAG",
+        "Memory Routing",
+        "Model Context Protocol (MCP)",
+        "LangChain / LangGraph / CrewAI"
       ]
     },
     {
-      "id": "data-analysis",
-      "title": "Análisis de Datos",
+      "id": "ml-dl",
+      "title": "Machine Learning",
       "skills": [
-        "EDA",
-        "Power BI",
-        "Looker",
-        "Visualización de datos",
-        "KPIs y métricas",
-        "Excel y Google Sheets"
+        "PyTorch",
+        "Hugging Face",
+        "Transformers",
+        "LLM Fine-Tuning",
+        "Scikit-Learn",
+        "Búsqueda Vectorial y Semántica",
+        "Ollama",
+        "Computer Vision",
+        "Evaluación de Modelos"
       ]
     },
     {
       "id": "data-eng",
-      "title": "Ingeniería de Datos",
+      "title": "Data Engineering",
       "skills": [
-        "ETL / ELT",
+        "Pipelines ETL / ELT",
         "Apache Airflow",
         "Kafka",
-        "Pentaho",
-        "N8N",
-        "Modelado y validación de datos",
-        "Automatización de pipelines"
+        "Validación de Datos",
+        "Automatización de Pipelines"
       ]
     },
     {
-      "id": "software-dev",
-      "title": "Desarrollo de Software",
+      "id": "backend-apis",
+      "title": "Backend & APIs",
       "skills": [
         "Python",
-        "TypeScript",
-        "JavaScript",
         "FastAPI",
-        "React",
-        "Angular",
         "APIs REST",
-        "Git",
-        "GitHub"
+        "TypeScript",
+        "Integración de Sistemas"
+      ]
+    },
+    {
+      "id": "mlops-infra",
+      "title": "MLOps & Infra",
+      "skills": [
+        "MLflow",
+        "DVC",
+        "AutoML",
+        "LangSmith / Phoenix",
+        "Model Deployment (vLLM/Ollama)",
+        "Versionado de Modelos y Datos"
       ]
     },
     {
@@ -126,11 +144,11 @@
       "title": "Bases de Datos",
       "skills": [
         "PostgreSQL",
-        "MySQL",
-        "MongoDB",
+        "pgvector",
         "Redis",
         "ChromaDB",
         "FAISS",
+        "Turbovec",
         "SQL y NoSQL"
       ]
     },
@@ -138,28 +156,20 @@
       "id": "cloud-devops",
       "title": "Cloud & DevOps",
       "skills": [
-        "AWS (EC2, S3, Lambda)",
+        "AWS",
+        "Azure",
         "Docker",
+        "Kubernetes",
         "Linux",
-        "CI/CD"
-      ]
-    },
-    {
-      "id": "product-arch",
-      "title": "Producto y Arquitectura",
-      "skills": [
-        "Diseño de soluciones end-to-end",
-        "Arquitectura de aplicaciones",
-        "Integración de sistemas",
-        "Relevamiento de requerimientos",
-        "Metodologías ágiles"
+        "CI/CD",
+        "Despliegues en Producción"
       ]
     }
   ],
   "contactSection": {
     "tag": "Contacto",
     "title": "¿Iniciamos una charla?",
-    "desc": "Si estás buscando llevar el componente de datos de tu producto a un nivel de clase mundial, me encontrás acá.",
+    "desc": "Si necesitás destrabar cuellos de botella en tu arquitectura de IA, diseñar sistemas de agentes autónomos o llevar flujos complejos de prototipo a producción real, hablemos.",
     "footerRights": "Todos los derechos reservados.",
     "footerMadeIn": "Hecho en Argentina"
   }

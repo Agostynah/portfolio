@@ -188,6 +188,12 @@ const IconDeploy = () => (
 const IconX = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
 )
+const IconOrcid = () => (
+  <svg width="20" height="20" viewBox="0 0 256 256" fill="currentColor">
+    <path d="M256,128c0,70.7-57.3,128-128,128S0,198.7,0,128S57.3,0,128,0S256,57.3,256,128z" fill="#A6CE39"/>
+    <path d="M86.3,186.2H70.1V78.8h16.2V186.2z M78.2,70.2c-5.7,0-10.2-4.6-10.2-10.2c0-5.7,4.6-10.2,10.2-10.2c5.7,0,10.2,4.6,10.2,10.2C88.4,65.6,83.9,70.2,78.2,70.2z M121.3,186.2H99.1V78.8h21.8c29.3,0,44.7,14.6,44.7,35.9c0,16-10.1,28.6-26.6,32.6c19.1,4,28.2,17.4,28.2,38.9h-22.6c0-22-9-31.9-27.2-31.9h-6.1V186.2z M121.3,126.2h5.5c15.1,0,22.8-6.9,22.8-19.1c0-11.2-8.3-17.3-22.3-17.3h-6V126.2z" fill="#FFFFFF"/>
+  </svg>
+)
 const IconCopy = () => (
   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2" /><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" /></svg>
 )
@@ -300,6 +306,7 @@ function App() {
   const [activePost, setActivePost] = useState(null)
   const [activeSkillGroup, setActiveSkillGroup] = useState('software-dev')
   const [skillsPage, setSkillsPage] = useState(0)
+  const [blogPage, setBlogPage] = useState(0)
   const data = portfolioData[language]
 
   const openPost = useCallback((post) => {
@@ -312,6 +319,7 @@ function App() {
 
   const handleLanguageChange = useCallback((newLang) => {
     if (newLang === language) return
+    setBlogPage(0)
 
     if (slug && activePost) {
       const localized = getLocalizedPost(language, newLang, activePost)
@@ -336,7 +344,7 @@ function App() {
 
   React.useEffect(() => {
     if (!isValidLocale(lang)) {
-      navigate(homePath('es'), { replace: true })
+      navigate(homePath('en'), { replace: true })
     }
   }, [lang, navigate])
 
@@ -564,7 +572,7 @@ function App() {
       {/* Nav */}
       <nav style={s.nav}>
         <div style={s.navInner}>
-          <span onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ ...s.logo, fontFamily: "'JetBrains Mono', 'Fira Code', monospace" }}>data.<span style={s.logoAccent}>tales</span></span>
+          <span onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ ...s.logo, fontFamily: "'JetBrains Mono', 'Fira Code', monospace" }}>Agos<span style={s.logoAccent}>ty</span></span>
           <div style={s.navLinks}>
             <a href={sectionPath(language, 'about')} style={s.navLink}>{data.nav.profile}</a>
             <a href={sectionPath(language, 'blog')} style={s.navLink}>{data.nav.blog}</a>
@@ -661,21 +669,40 @@ function App() {
             </div>
 
             {/* Social Proof Hook */}
-            <div style={{
-              padding: '7px 10px',
-              background: 'rgba(74, 222, 128, 0.04)',
-              borderRadius: '10px',
-              border: '1px solid rgba(74, 222, 128, 0.1)',
-              fontSize: '10.5px',
-              lineHeight: '1.45',
-              color: '#a7f3d0',
-              fontFamily: "'JetBrains Mono', monospace",
-              marginTop: '24px'
-            }}>
+            <a
+              href="https://www.somoscorpora.com/products"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'block',
+                textDecoration: 'none',
+                padding: '7px 10px',
+                background: 'rgba(74, 222, 128, 0.04)',
+                borderRadius: '10px',
+                border: '1px solid rgba(74, 222, 128, 0.1)',
+                fontSize: '10.5px',
+                lineHeight: '1.45',
+                color: '#a7f3d0',
+                fontFamily: "'JetBrains Mono', monospace",
+                marginTop: '24px',
+                transition: 'all 0.2s ease-in-out',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = 'rgba(74, 222, 128, 0.08)';
+                e.currentTarget.style.borderColor = 'rgba(74, 222, 128, 0.3)';
+                e.currentTarget.style.color = '#fff';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = 'rgba(74, 222, 128, 0.04)';
+                e.currentTarget.style.borderColor = 'rgba(74, 222, 128, 0.1)';
+                e.currentTarget.style.color = '#a7f3d0';
+              }}
+            >
               {language === 'es'
-                ? '🚀 Proyecto de analítica de video en producción real.'
-                : '🚀 Video & data analytics project active in production.'}
-            </div>
+                ? '🚀 Analítica de video en producción, co-desarrollada durante mi internship en Corpora.'
+                : '🚀 Video analytics in production, co-developed during my internship at Corpora.'}
+            </a>
           </div>
 
           {/* Premium Scroll Indicator */}
@@ -717,7 +744,7 @@ function App() {
 
           {/* Project Tabs Selector */}
           <div style={{ display: 'flex', gap: '10px', overflowX: 'auto', paddingBottom: '16px', marginBottom: '32px', borderBottom: '1px solid #e2e8f0' }}>
-            {['Standalone', 'Research', 'Systems', 'Creative Coding'].map(tab => {
+            {['Standalone', 'Research', 'Systems', 'Creative Coding', 'Data Science'].map(tab => {
               const isActive = activeTab === tab
               return (
                 <button
@@ -813,26 +840,150 @@ function App() {
         <section id="blog" style={{ paddingTop: 48, borderTop: '1px solid rgba(255, 255, 255, 0.1)', paddingBottom: 60, minHeight: '80vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', scrollMarginTop: '110px' }}>
           <p style={s.sectionTag}>{data.blogSection.tag}</p>
           <h2 style={{ ...s.h2, marginBottom: '24px' }}>{data.blogSection.title}</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px', flex: 1 }}>
-            {data.blogPosts.map(post => (
-              <div
-                key={post.id}
-                style={{ ...s.card, cursor: 'pointer', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '260px', padding: '28px 30px' }}
-                onClick={() => openPost(post)}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(74, 222, 128, 0.5)'; e.currentTarget.style.transform = 'translateY(-4px)' }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.transform = 'translateY(0)' }}
-              >
-                <div>
-                  <p style={s.expPeriod}>{post.date} — {post.readTime}</p>
-                  <h3 style={{ ...s.cardTitle, fontSize: '22px', margin: '8px 0 10px', transition: 'color 0.2s' }}>{post.title}</h3>
-                  <p style={{ ...s.cardDesc, marginBottom: '12px', lineHeight: '1.6', fontSize: '13px' }}>{post.excerpt}</p>
+          
+          {(() => {
+            const POSTS_PER_PAGE = 4;
+            const paginatedPosts = data.blogPosts.slice(blogPage * POSTS_PER_PAGE, (blogPage + 1) * POSTS_PER_PAGE);
+            const totalBlogPages = Math.ceil(data.blogPosts.length / POSTS_PER_PAGE);
+
+            return (
+              <>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px', flex: 1 }} className="responsive-grid2">
+                  {paginatedPosts.map(post => (
+                    <div
+                      key={post.id}
+                      style={{ ...s.card, cursor: 'pointer', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '260px', padding: '28px 30px' }}
+                      onClick={() => openPost(post)}
+                      onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(74, 222, 128, 0.5)'; e.currentTarget.style.transform = 'translateY(-4px)' }}
+                      onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.transform = 'translateY(0)' }}
+                    >
+                      <div>
+                        <p style={s.expPeriod}>{post.date} — {post.readTime}</p>
+                        <h3 style={{ ...s.cardTitle, fontSize: '22px', margin: '8px 0 10px', transition: 'color 0.2s' }}>{post.title}</h3>
+                        <p style={{ ...s.cardDesc, marginBottom: '12px', lineHeight: '1.6', fontSize: '13px' }}>{post.excerpt}</p>
+                      </div>
+                      <span style={{ color: '#4ade80', textDecoration: 'none', fontSize: '13px', fontWeight: 650, display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                        {language === 'es' ? 'Leer artículo' : 'Read post'} <IconArrow />
+                      </span>
+                    </div>
+                  ))}
                 </div>
-                <span style={{ color: '#4ade80', textDecoration: 'none', fontSize: '13px', fontWeight: 650, display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-                  {language === 'es' ? 'Leer artículo' : 'Read post'} <IconArrow />
-                </span>
-              </div>
-            ))}
-          </div>
+
+                {/* Blog Pagination Controls */}
+                {totalBlogPages > 1 && (
+                  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '16px', marginTop: '36px' }}>
+                    <button
+                      onClick={() => setBlogPage(prev => Math.max(0, prev - 1))}
+                      disabled={blogPage === 0}
+                      style={{
+                        background: 'rgba(255, 255, 255, 0.03)',
+                        border: '1px solid rgba(255, 255, 255, 0.1)',
+                        color: blogPage === 0 ? 'rgba(255, 255, 255, 0.15)' : '#4ade80',
+                        borderRadius: '50%',
+                        width: '40px',
+                        height: '40px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: blogPage === 0 ? 'default' : 'pointer',
+                        transition: 'all 0.2s ease',
+                        opacity: blogPage === 0 ? 0.35 : 1
+                      }}
+                      onMouseEnter={e => {
+                        if (blogPage !== 0) {
+                          e.currentTarget.style.borderColor = 'rgba(74, 222, 128, 0.4)';
+                          e.currentTarget.style.background = 'rgba(74, 222, 128, 0.05)';
+                        }
+                      }}
+                      onMouseLeave={e => {
+                        if (blogPage !== 0) {
+                          e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.03)';
+                        }
+                      }}
+                    >
+                      <IconChevronLeft />
+                    </button>
+
+                    <div style={{ display: 'flex', gap: '8px' }}>
+                      {Array.from({ length: totalBlogPages }).map((_, idx) => {
+                        const isActive = blogPage === idx;
+                        return (
+                          <button
+                            key={idx}
+                            onClick={() => setBlogPage(idx)}
+                            style={{
+                              width: '32px',
+                              height: '32px',
+                              borderRadius: '8px',
+                              background: isActive ? 'rgba(74, 222, 128, 0.12)' : 'rgba(255, 255, 255, 0.03)',
+                              border: isActive ? '1px solid #4ade80' : '1px solid rgba(255, 255, 255, 0.1)',
+                              color: isActive ? '#4ade80' : '#cbd5e1',
+                              fontSize: '13px',
+                              fontWeight: 600,
+                              cursor: 'pointer',
+                              transition: 'all 0.2s ease',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              fontFamily: "'JetBrains Mono', monospace"
+                            }}
+                            onMouseEnter={e => {
+                              if (!isActive) {
+                                e.currentTarget.style.borderColor = 'rgba(74, 222, 128, 0.4)';
+                                e.currentTarget.style.color = '#fff';
+                              }
+                            }}
+                            onMouseLeave={e => {
+                              if (!isActive) {
+                                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                                e.currentTarget.style.color = '#cbd5e1';
+                              }
+                            }}
+                          >
+                            {idx + 1}
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    <button
+                      onClick={() => setBlogPage(prev => Math.min(totalBlogPages - 1, prev + 1))}
+                      disabled={blogPage === totalBlogPages - 1}
+                      style={{
+                        background: 'rgba(255, 255, 255, 0.03)',
+                        border: '1px solid rgba(255, 255, 255, 0.1)',
+                        color: blogPage === totalBlogPages - 1 ? 'rgba(255, 255, 255, 0.15)' : '#4ade80',
+                        borderRadius: '50%',
+                        width: '40px',
+                        height: '40px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: blogPage === totalBlogPages - 1 ? 'default' : 'pointer',
+                        transition: 'all 0.2s ease',
+                        opacity: blogPage === totalBlogPages - 1 ? 0.35 : 1
+                      }}
+                      onMouseEnter={e => {
+                        if (blogPage !== totalBlogPages - 1) {
+                          e.currentTarget.style.borderColor = 'rgba(74, 222, 128, 0.4)';
+                          e.currentTarget.style.background = 'rgba(74, 222, 128, 0.05)';
+                        }
+                      }}
+                      onMouseLeave={e => {
+                        if (blogPage !== totalBlogPages - 1) {
+                          e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.03)';
+                        }
+                      }}
+                    >
+                      <IconChevronRight />
+                    </button>
+                  </div>
+                )}
+              </>
+            );
+          })()}
         </section>
 
         {/* Experience & Skills */}
@@ -1041,12 +1192,14 @@ function App() {
               ))}
             </div>
 
-            <div style={s.darkBox}>
-              <div style={s.darkOrb} />
-              <p style={s.darkTag}>{data.skillsSection.focusTag}</p>
-              <h3 style={s.darkTitle}>{data.skillsSection.focusTitle}</h3>
-              <p style={s.darkDesc}>{data.skillsSection.focusDesc}</p>
-            </div>
+            {data.skillsSection.focusTag && (
+              <div style={s.darkBox}>
+                <div style={s.darkOrb} />
+                <p style={s.darkTag}>{data.skillsSection.focusTag}</p>
+                <h3 style={s.darkTitle}>{data.skillsSection.focusTitle}</h3>
+                <p style={s.darkDesc}>{data.skillsSection.focusDesc}</p>
+              </div>
+            )}
           </div>
         </section>
 
@@ -1059,6 +1212,9 @@ function App() {
             <a href={data.personalInfo.github} target="_blank" rel="noopener noreferrer" className="social-btn" style={{ ...s.circleBtn, background: '#fff', color: '#181717' }}><IconGithub /></a>
             <a href={data.personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="social-btn" style={{ ...s.circleBtn, background: '#0a66c2', borderColor: '#0a66c2', color: '#fff' }}><IconLinkedin /></a>
             <a href={data.personalInfo.twitter} target="_blank" rel="noopener noreferrer" className="social-btn" style={{ ...s.circleBtn, background: '#000000', borderColor: 'rgba(255, 255, 255, 0.15)', color: '#fff' }}><IconX /></a>
+            {data.personalInfo.orcid && (
+              <a href={data.personalInfo.orcid} target="_blank" rel="noopener noreferrer" className="social-btn" style={{ ...s.circleBtn, background: '#a6ce39', borderColor: '#a6ce39', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><IconOrcid /></a>
+            )}
             <button
               onClick={handleCopyEmail}
               onMouseEnter={() => setShowEmailTooltip(true)}

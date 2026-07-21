@@ -1,5 +1,27 @@
 [
   {
+    "id": 7,
+    "slug": "la-ilusion-del-segundo-cerebro",
+    "title": "La ilusión del segundo cerebro",
+    "date": "Julio 2026",
+    "readTime": "3 min",
+    "excerpt": "Reflexiones sobre Notion templates, Second Brain, Bullet Journals y cómo la optimización prematura y el overfitting de sistemas de productividad limitan nuestra capacidad de explorar y descubrir.",
+    "image": "/blog/es_exploracionvsejecucion.png",
+    "content": [
+      "__IMAGE_PATH:/blog/es_exploracionvsejecucion.png|Exploración frente a Ejecución: la tensión entre descubrir conexiones e imponer estructuras.",
+      "Durante años probé prácticamente todas las variantes de organización personal imaginables: Notion templates, sistemas de Second Brain, Bullet Journals, gestores de conocimiento y, más recientemente, herramientas potenciadas por IA.",
+      "Cada una me prometía una versión más ordenada, más eficiente y más productiva de mí misma.",
+      "Y durante un tiempo sentí que funcionaban. Mi información estaba mejor clasificada. Mis proyectos estaban mejor definidos. Mis tareas tenían más contexto y trazabilidad.",
+      "Sin embargo, empecé a notar una paradoja: cuanto más sofisticado se volvía el sistema, más difícil me resultaba seguir mi curiosidad.",
+      "Como generalista, rara vez aprendo de forma lineal. Mi proceso suele consistir en moverme entre disciplinas, perseguir preguntas abiertas y explorar conexiones que todavía no tienen una utilidad evidente. Muchas de las ideas más importantes que encontré surgieron precisamente de esos recorridos aparentemente improductivos.",
+      "Pero los sistemas de productividad tienden a exigir claridad prematura. Quieren convertir rápidamente una intuición en un proyecto, una pregunta en una tarea y una exploración en un objetivo medible.",
+      "Lo entiendo: para ejecutar, esa estructura es valiosa.",
+      "Para descubrir, no siempre.",
+      "__IMAGE_PATH:/blog/es_overfittingLearning.png|Overfitting en el aprendizaje: la optimización prematura limita la exploración de lo desconocido.",
+      "Con el tiempo empecé a sentir que estaba optimizando demasiado pronto. En lugar de expandir mis posibilidades, el sistema comenzaba a moldear qué consideraba relevante. Terminaba haciendo overfitting sobre mis intereses actuales, construyendo una estructura excelente para explotar lo que ya sabía, pero menos efectiva para explorar lo que todavía desconocía."
+    ]
+  },
+  {
     "id": 6,
     "slug": "proxima-escasez-internet-confianza",
     "title": "La próxima escasez de internet podría ser la confianza",
