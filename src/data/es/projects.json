@@ -1,5 +1,27 @@
 [
   {
+    "id": 14,
+    "category": "Creative Coding",
+    "title": "Pet Companion Protocol",
+    "description": "NFT de identidad de mascota on-chain con un registro de eventos de cuidado (vacunas, chequeos) y una recompensa ERC-20 vinculada que se acuña automáticamente en cada evento verificado. Construido como muestra técnica para una startup de ecosistema de mascotas basado en blockchain, con un frontend en vivo para conectar una wallet e interactuar directo con los contratos.",
+    "tools": [
+      "Solidity",
+      "Hardhat",
+      "OpenZeppelin",
+      "Next.js",
+      "Wagmi",
+      "RainbowKit"
+    ],
+    "year": "Agosto 2026",
+    "repo": "https://github.com/Agostynah/pet-companion-protocol",
+    "deploy": "https://pet-companion-protocol.vercel.app",
+    "image": "/projects/petCompanionProtocol.png",
+    "images": [
+      "/projects/petCompanionProtocol.png"
+    ],
+    "metric": "17 tests exitosos, deployado y verificado en Sepolia"
+  },
+  {
     "id": 13,
     "category": "Research",
     "title": "Constrained Memory Update in 3D Reconstruction",
