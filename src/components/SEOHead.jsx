@@ -92,7 +92,7 @@ export default function SEOHead({ language, slug }) {
       })
     } else {
       const title = SITE_NAME
-      const description = data.personalInfo.bio
+      const description = data.personalInfo.metaDescription || data.personalInfo.bio
       const canonical = absoluteUrl(homePath(language))
       const alternateLang = language === 'es' ? 'en' : 'es'
 
