@@ -102,7 +102,7 @@ export default function SEOHead({ language, slug }) {
       upsertMeta('property', 'og:description', description)
       upsertMeta('property', 'og:type', 'website')
       upsertMeta('property', 'og:url', canonical)
-      upsertMeta('name', 'twitter:card', 'summary')
+      upsertMeta('name', 'twitter:card', 'summary_large_image')
       upsertMeta('name', 'twitter:title', title)
       upsertMeta('name', 'twitter:description', description)
       upsertLink('canonical', canonical)
